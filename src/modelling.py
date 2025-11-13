@@ -15,7 +15,7 @@ import os
 warnings.filterwarnings('ignore')
 
 # Path data (relative to the root of the Workflow-CI repository)
-DATA_PATH = 'namadataset_preprocessing/wine_processed.csv'
+DATA_PATH = '.././namadataset_preprocessing/wine_processed.csv'
 
 def load_data(path):
     """Memuat data bersih."""

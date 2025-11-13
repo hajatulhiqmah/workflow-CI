@@ -1,0 +1,9 @@
+name: WineQualityTrainingCI
+
+# Path baru ke file environment Anda
+conda_env: src/conda.yaml
+
+entry_points:
+  main:
+    # Path baru ke skrip Anda
+    command: "python src/modelling.py"
