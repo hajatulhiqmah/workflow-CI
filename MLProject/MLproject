@@ -2,7 +2,7 @@
 name: WineQualityTrainingCI
 
 # Menentukan environment yang akan digunakan
-conda_env: MLProject/conda.yaml
+conda_env: MLProject/conda.yaml 
 
 # Mendefinisikan entry point (perintah) untuk menjalankan proyek
 # Ini akan menjalankan 'python MLProject/modelling.py'
