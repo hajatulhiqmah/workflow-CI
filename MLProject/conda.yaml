@@ -1,0 +1,12 @@
+name: mlproject-wine-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - mlflow
+    - pandas
+    - scikit-learn
+    - dagshub  # Diperlukan untuk log ke DagsHub
