@@ -19,7 +19,7 @@ jobs:
         uses: conda-incubator/setup-miniconda@v2
         with:
           python-version: 3.9
-          environment-file: MLProject/conda.yaml # Otomatis membuat env dari file conda.yaml
+          environment-file: src/conda.yaml # Otomatis membuat env dari file conda.yaml
           activate-environment: mlproject-wine-env # Nama env dari conda.yaml
           auto-activate-base: false
 
