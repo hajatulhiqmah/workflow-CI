@@ -1,9 +1,10 @@
-name: WineQualityTrainingCI
+name: HeartDiseaseTrainingCI
 
-# Path baru ke file environment Anda
+# Path ke file konfigurasi environment (Pastikan file ini ada)
 conda_env: src/conda.yaml
 
 entry_points:
   main:
-    # Path baru ke skrip Anda
+    # Perintah yang dijalankan saat 'mlflow run .' dipanggil
+    # Path ini sudah benar jika modelling.py ada di dalam folder src
     command: "python src/modelling.py"
