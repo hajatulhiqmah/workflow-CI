@@ -21,7 +21,7 @@ jobs:
         uses: conda-incubator/setup-miniconda@v2
         with:
           python-version: 3.9
-          environment-file: MLProject/conda.yaml # Otomatis membuat env dari file conda.yaml
+          environment-file: src/conda.yaml # Otomatis membuat env dari file conda.yaml
           activate-environment: mlproject-heart-env # Nama env dari conda.yaml
           auto-activate-base: false
 
@@ -44,7 +44,7 @@ jobs:
       # Kita upload folder mlruns lokal yang dibuat oleh runner GitHub
       # sebagai bukti artefak (selain yang sudah di-log ke DagsHub)
       - name: 📦 Upload local mlruns artifact (Skilled)
-        if: success() # Hanya berjalan jika langkah sebelumnya sukses
+        if: success() 
         uses: actions/upload-artifact@v4
         with:
           name: mlruns-local-artifact
