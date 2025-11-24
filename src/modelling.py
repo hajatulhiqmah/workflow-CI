@@ -22,10 +22,10 @@ def main():
 
     # 1. Autolog
     # Kita nonaktifkan log_models di autolog agar tidak bentrok dengan manual log kita
-    mlflow.sklearn.autolog(log_models=False)
+    mlflow.sklearn.autolog(log_models=True)
 
     # 2. Load Data
-    data_path = '.././namadataset_preprocessing/heart_processed.csv'
+    data_path = 'namadataset_preprocessing/heart_processed.csv'
     
     try:
         df = load_data(data_path)
